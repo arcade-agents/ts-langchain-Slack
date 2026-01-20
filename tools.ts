@@ -14,7 +14,7 @@ import {
 import readline from "node:readline/promises";
 
 // This determines which tools require human in the loop approval to run
-const TOOLS_WITH_APPROVAL = ['Slack_SendMessage'];
+const TOOLS_WITH_APPROVAL = ['Slack_GetConversationMetadata', 'Slack_GetMessages', 'Slack_GetUsersInConversation', 'Slack_GetUsersInfo', 'Slack_ListConversations', 'Slack_ListUsers', 'Slack_SendMessage'];
 
 // Prompt user for yes/no confirmation
 export async function confirm(question: string, rl?: readline.Interface): Promise<boolean> {
